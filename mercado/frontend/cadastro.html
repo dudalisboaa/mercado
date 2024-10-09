@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Loja Market Mine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="catalogo.html">Catálogo de Produtos</a></li>
+                <li><a href="carrinho.html">Carrinho de Compras</a></li>
+                <li><a href="cadastro.html"> cadastrar novo produto</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div style="display: none;" id="informacoes"></div>
+
+    <div>
+        <input type="text" id="name" placeholder="Nome">
+    </div>
+    <div>
+        <input type="text" id="email" placeholder="Email">
+    </div>
+    <div>
+        <input type="text" id="password" placeholder="Senha">
+    </div>
+    <div>
+        <button onclick="cadastrar(event)">Cadastrar</button>
+    </div>
+
+    <div>
+        <div>
+            <p>Login</p>
+        </div>
+        <div>
+            <input type="text" placeholder="Email" id="email_login">
+            <input type="text" placeholder="Senha" id="password_login">
+            <button onclick="logar(event)">Logar</button>
+            <button onclick="sair(event)">Sair</button>
+        </div>
+    </div>
+    <div style="display: none; margin-bottom: 20px; margin-left: 20px;" id="cadastrar_produto">
+        <input type="text" id="title" placeholder="Nome do produto">
+        <input type="text" id="price" placeholder="Preco do produto">
+        <input type="file" id="file">
+        <button onclick="cadastrarProduto(event)">Inserir</button>
+    </div>
+    
+    <script src="script.js"></script>  
+</body>
+</html>
